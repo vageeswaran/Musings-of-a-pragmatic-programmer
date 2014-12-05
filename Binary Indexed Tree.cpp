@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 #define forall(i,a,b)               for(int i=a;i<=b;i++)
 #define pb                          push_back
-#define mp 							make_pair
+#define mp 		        	make_pair
 #define INDEX(arr,ind)               (lower_bound(all(arr),ind)-arr.begin())
 #define mod                          1000000007
 
@@ -75,11 +75,11 @@ int main()
 	while(t--)
 	{	
 	
-		//tree1=new int[100001];tree2=new int[100001];
+		
 		ll n,c;
 		cin>>n>>c;
-	//	forall(i,1,n){update1(i,0);update2(i,0);}
-	memset(tree1, 0, (n+1) * sizeof(ll));
+	
+	        memset(tree1, 0, (n+1) * sizeof(ll));
 		memset(tree2, 0, (n+1) * sizeof(ll));
 		while(c--)
 		{
@@ -89,7 +89,7 @@ int main()
 			{
 				cin>>v;
 				update1(p,v);update1(q+1,-v);
-				//update2(p,v*(p-1));update2(q+1,-v*q);
+				update2(p,v*(p-1));update2(q+1,-v*q);
 			}
 			else
 			{
