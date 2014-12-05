@@ -9,4 +9,4 @@ Description: The lazy caterer's sequence, more formally known as the central pol
              common point, but seven if they do not.
              
              The maximum number p of pieces that can be created with a given number of cuts n, where n ≥ 0, is given by the formula
-             p = \frac{n^2+n+2}{2}.
+             p = {n^2+n+2}/{2} 
